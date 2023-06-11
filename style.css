@@ -46,6 +46,10 @@ nav ul li {
 nav ul li:hover {
 	border-bottom-color: #000;
 }
+nav ul li a {
+    text-decoration: none; /* Supprime la soulignement du lien */
+    color: black; /* Modifie la couleur du lien */
+}
 
 .page-content {
 	margin: 4%;
@@ -118,19 +122,40 @@ footer {
 	margin-top: 5%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	padding: 10px;
 	background-color: #000;
 	color: white;
 }
-footer .colonne p {
-	font-size: 12px;
-	color: #ccc;
-	cursor: pointer;
+
+
+footer .colonne {	
+	font-family: 'Noto Sans JP', sans-serif;
 }
-footer .colonne p:hover {
+
+
+footer .colonne p,
+footer .colonne a {	
+	font-size: 12px;	
+	color: #ccc;	
+	cursor: pointer;	
+	text-decoration: none;
+}
+
+footer .colonne p:hover,
+footer .colonne a:hover {	
 	color: #fff;
 }
+footer .colonne h3 {	
+	font-size: 20px;	
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+  
+
+  
+  
 
 @media screen and (max-width: 700px) {
 	nav {
@@ -157,12 +182,5 @@ footer .colonne p:hover {
 	}
 	.page-content .projects-section .project .description {
 		font-size: 13px;
-	}
-
-	footer {
-		justify-content: flex-start;
-	}
-	footer .column {
-		width: 80%;
 	}
 }
