@@ -60,9 +60,8 @@ section {
     width: 100%;
     padding-bottom: 20px;
     margin: 20px auto;
-    box-shadow: 0px 0px 10px #bbb;
+    box-shadow: none;
     background-color: #fff;
-    text-align: center;
     border: 1px solid #bbb;
     box-sizing: border-box;
 }
@@ -71,6 +70,10 @@ section h2 {
     margin: 20px 0;
     width: 90%;
     line-height: 30px;
+}
+section .h3gauche{
+    margin: 20px 0 ;
+    font-size: 24px;
 }
 
 section > div {
@@ -84,8 +87,8 @@ section > div {
 
 .photo img {
     width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    height: 130px;
+    border-radius: 100%;
     margin-top: -80px;
 }
 
@@ -260,17 +263,18 @@ section > div {
     width: 120px;
     height: 100px;
     border-radius: 50%;
-    box-shadow: 0px 0px 15px #555;
+    box-shadow: 0px 0px 15px #267bb8;
 }
 
 /* Sélecteur d'ID */
 #reponse {
     padding: 1em;
     font-size: larger;
-    color: #5a412d;
+    color: #000000;
     display: flex;
     justify-content: space-around;
-    background-color: #f5e79a;
+    background-color: #ffffff;
+    box-shadow: none;
 }
 
 /* VERSION BUREAU DU CV */
@@ -333,32 +337,39 @@ section > div {
 table {
     width: 100%;
     border-collapse: collapse;
-}
-
-thead th {
-    background-color: #f2f2f2;
-    color: #333;
-    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-right: 40px;
+  }
+  
+  th, td {
+    padding: 8px;
     text-align: left;
-    padding: 8px;
-}
-
-tbody td {
-    padding: 8px;
-}
-
-tbody td:nth-child(odd) {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    text-align: center; /* Centrer le texte des en-têtes */
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  tbody tr:nth-child(even) {
     background-color: #f9f9f9;
-}
-
-tbody td.Débutant {
-    background-color: #e5fa00;
-}
-
-tbody td.Intermédiaire {
-    background-color: #3ad267;
-}
-
-tbody td.Avancé {
-    background-color: #ccffcc;
-}
+  }
+  
+  tbody tr:hover {
+    background-color: #e6e6e6;
+  }
+  
+  td:first-child {
+    font-weight: bold;
+  }
+  
+  /* Couleurs pour les niveaux de maîtrise */
+  td:nth-child(2) {
+    font-weight: bold;
+    color: #008000; /* Couleur pour le niveau "Avancé" */
+  }
