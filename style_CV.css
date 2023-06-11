@@ -1,61 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oswald:wght@300&display=swap');
-*{
+* {
     font-family: 'Noto Sans JP', sans-serif;
-    padding: 0px;
-    margin: 0px;
-    text-align: justify;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     line-height: 30px;
 }
+
 nav ul li a:hover {
     color: black;
 }
 
-body{
+body {
     background: #ffffff;
 }
-p{
+
+p {
     font-size: 1em;
     line-height: 1.5em;
+    color: #818181;
 }
-a{
+
+a {
     color: #000000;
 }
 
-
-header{
+header {
     width: 100%;
     padding: 20px 0px;
     background: #000000;
     height: 125px;
 }
 
-header h1{
+header h1 {
     color: white;
-    
     width: 100%;
     margin: 0;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     font-size: 3vw;
 }
-h2{
+
+h2 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
 }
-h3, h4{
+
+h3,
+h4 {
     font-family: 'Oswald', sans-serif;
-}
-p{
-    color: #818181 ;
-    font-family: 'Noto Sans JP', sans-serif;
+    color: #000000;
 }
 
-
-
-/*SECTIONS*/
-section{
-    display: flex; 
+/* SECTIONS */
+section {
+    display: flex;
     flex-flow: row wrap;
     justify-content: center;
     width: 100%;
@@ -66,42 +65,41 @@ section{
     text-align: center;
     border: 1px solid #bbb;
     box-sizing: border-box;
-    text-align: center;
 }
 
-section h2{
+section h2 {
     margin: 20px 0;
     width: 90%;
     line-height: 30px;
-	color: #000000;
 }
-section > div{
+
+section > div {
     width: 90%;
 }
 
-/*SECTION INFOS*/
-.photo{
+/* SECTION INFOS */
+.photo {
     text-align: center;
 }
-.photo img{
+
+.photo img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-top: -80px;
 }
+
 .prez {
     border-bottom: 2px dashed #ccc;
-    line-height: 30px;
-    color: #818181;
-  }
-  
-  .prez .buttons {
+}
+
+.prez .buttons {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-  }
-  
-  .prez .buttons a {
+}
+
+.prez .buttons a {
     display: block;
     text-align: center;
     padding: 10px;
@@ -110,121 +108,138 @@ section > div{
     background-color: #777;
     border-radius: 10px;
     text-decoration: none;
-  }
-  
-  .prez .buttons a:hover {
+}
+
+.prez .buttons a:hover {
     background-color: #000000;
     color: white;
-  }
+}
 
-  
-.contact-flex{
+.contact-flex {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    line-height: 30px;
-	color: #818181;
 }
-.contact-flex p:first-child{
+
+.contact-flex p:first-child {
     flex: 0 0 40%;
 }
-.contact-flex p:last-child{
+
+.contact-flex p:last-child {
     flex: 0 0 60%;
 }
-.social{
+
+.social {
     display: flex;
-    margin: 10px auto 0px auto;
+    margin: 10px auto 0;
 }
-.social img{
+
+.social img {
     width: 40px;
     height: 40px;
 }
 
-/*SECTION EXP ET FORMATION*/
-.exp{
+/* SECTION EXP ET FORMATION */
+.exp {
     display: flex;
     flex-flow: row wrap;
     border-bottom: 1px solid #bbb;
     padding-bottom: 10px;
     margin-bottom: 10px;
-    font-family: 'Noto Sans JP', sans-serif;
 }
-.exp-info{
+
+.exp-info {
     display: flex;
     flex-flow: column wrap;
 }
-.exp-logo{
+
+.exp-logo {
     flex: 0 0 25%;
     max-width: 100px;
 }
-.exp-info{
+
+.exp-info {
     flex: 0 0 70%;
     margin-left: auto;
 }
-.exp img{
+
+.exp img {
     width: 100%;
 }
-.exp h3{
-    font-size:  1.2em;
+
+.exp h3 {
+    font-size: 1.2em;
     font-family: 'Oswald', sans-serif;
 }
-.exp h4{
-    font-size:  1em;
+
+.exp h4 {
+    font-size: 1em;
     font-weight: normal;
     font-family: 'Oswald', sans-serif;
 }
 
-/*SECTION COMPETENCES*/
-.h3gauche{
+/* SECTION COMPETENCES */
+.h3gauche {
     width: 90%;
 }
-.comp{
-    display:flex;
+
+.comp {
+    display: flex;
     flex-flow: row wrap;
     margin-bottom: 10px;
 }
-.comp p{
+
+.comp p {
     flex: 0 0 40%;
 }
-.conteneur-barre{
+
+.conteneur-barre {
     flex: 0 0 60%;
     border-radius: 5px;
     background-color: grey;
     border-bottom: 1px ridge grey;
 }
-.barre{
+
+.barre {
     display: block;
     height: 100%;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-.c80{
+
+.c80 {
     width: 80%;
     background-color: #0c74bc;
 }
-.c85{
+
+.c85 {
     width: 85%;
     background-color: #0c74bc;
 }
-.c90{
+
+.c90 {
     width: 90%;
     background-color: #0c74bc;
 }
-.c95{
+
+.c95 {
     width: 95%;
     background-color: #0c74bc;
 }
-.c100{
+
+.c100 {
     width: 100%;
     background-color: #0c74bc;
     border-radius: 5px;
 }
-.comp2{
+
+.comp2 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
-.conteneur-barre2{
+
+.conteneur-barre2 {
     flex: 0 0 100%;
     height: 0.5em;
     margin-bottom: 0.25em;
@@ -232,104 +247,118 @@ section > div{
     background-color: rgb(255, 255, 255);
 }
 
-/*SECTION INTERETS*/
-.interet{
+/* SECTION INTERETS */
+.interet {
     flex: 0 1 50%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     margin-bottom: 20px;
 }
-.interet img{
+
+.interet img {
     width: 120px;
     height: 100px;
     border-radius: 50%;
     box-shadow: 0px 0px 15px #555;
 }
-/*Sélecteur d'ID*/
-#reponse{
-       /* margin: 1em; */
-       padding: 1em;
-       font-size: larger;
-       color: #5a412d;
-       display: flex;
-       justify-content: space-around;
-       background-color: #f5e79a;
+
+/* Sélecteur d'ID */
+#reponse {
+    padding: 1em;
+    font-size: larger;
+    color: #5a412d;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5e79a;
 }
-/*VERSION BUREAU DU CV*/
-@media screen and (min-width: 980px){
-    section{
+
+/* VERSION BUREAU DU CV */
+@media screen and (min-width: 980px) {
+    section {
         width: 80%;
         box-shadow: 0px 0px 10px #bbb;
     }
-    a:hover{
+
+    a:hover {
         color: rgb(0, 0, 0);
     }
-    header h1{
+
+    header h1 {
         text-align: center;
     }
-    .prez, .contact{
+
+    .prez,
+    .contact {
         flex: 0 0 45%;
     }
-    .prez{
+
+    .prez {
         border-bottom: none;
         border-right: 2px solid #ccc;
         padding-right: 20px;
         margin-left: auto;
     }
-    .contact{
+
+    .contact {
         padding-left: 20px;
         margin-right: auto;
     }
-    .prez a{
+
+    .prez a {
         border: 2px solid transparent;
     }
-    .prez a:hover{
+
+    .prez a:hover {
         color: #434343;
         background-color: #fff;
-        border: 2px solid #000000;   
+        border: 2px solid #000000;
     }
-    .exp-logo{
+
+    .exp-logo {
         flex: 0 0 10%;
     }
-    .exp-info, .exp-desc{
+
+    .exp-info,
+    .exp-desc {
         flex: 0 0 85%;
         margin-left: auto;
     }
-    .interet{
+
+    .interet {
         flex: 0 1 25%;
     }
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
-  }
-  
-  thead th {
+}
+
+thead th {
     background-color: #f2f2f2;
     color: #333;
     font-weight: bold;
     text-align: left;
     padding: 8px;
-  }
-  
-  tbody td {
+}
+
+tbody td {
     padding: 8px;
-  }
-  
-  tbody td:nth-child(odd) {
+}
+
+tbody td:nth-child(odd) {
     background-color: #f9f9f9;
-  }
-  
-  tbody td.Débutant {
+}
+
+tbody td.Débutant {
     background-color: #e5fa00;
-  }
-  
-  tbody td.Intermédiaire {
+}
+
+tbody td.Intermédiaire {
     background-color: #3ad267;
-  }
-  
-  tbody td.Avancé {
+}
+
+tbody td.Avancé {
     background-color: #ccffcc;
-  }
-  
+}
