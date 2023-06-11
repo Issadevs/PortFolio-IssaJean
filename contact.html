@@ -3,36 +3,36 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="Style_Formulaire.css" />
-        <link rel="stylesheet" href="style_CV.css" />
-		<title>
-			Contactez-nous
-		</title>
-        <style> #reponse {
-            margin-top: 20px;
-            font-weight: bold;
-            color: green;
-          }
-          </style>
-          <script>function envoyerFormulaire(event) {
-            event.preventDefault(); // Empêche le formulaire de se soumettre
-          
-            // Récupérer les valeurs des champs du formulaire
-            var nom = document.getElementById('nom').value;
-            var prenom = document.getElementById('prenom').value;
-            var email = document.getElementsByName('field3')[0].value;
-            var sujet = document.getElementsByName('field4')[0].value;
-            var message = document.getElementById('field5').value;
-          
-            // Afficher un message de confirmation
-            var reponseElement = document.getElementById('reponse');
-            reponseElement.innerHTML = "Votre message a été envoyé !";
-          
-            // Réinitialiser les valeurs du formulaire
-            document.monformulaire.reset();
-          }
-          </script>
+		<link rel="stylesheet" href="style.css" /> <!-- Lie le fichier CSS pour les styles généraux externe -->
+        <link rel="stylesheet" href="Style_Formulaire.css" /> <!-- Lie le fichier CSS_Formulaire externe pour le formulaire -->
+        <link rel="stylesheet" href="style_CV.css" /> <!-- Lie le fichier CSS_CV externe pour le CV -->
+		<title>Contactez-nous</title> <!-- Titre de la page -->
+        <style> /*Style CSS pour la réponse aprés avoir cliqué sur envoyer*/
+            #reponse {
+                margin-top: 20px;
+                font-weight: bold;
+                color: green;
+            }
+        </style>
+        <script> <!-- Script JavaScript -->
+            function envoyerFormulaire(event) {
+                event.preventDefault(); // Empêche le formulaire de se soumettre
+
+                // Récupérer les valeurs des champs du formulaire
+                var nom = document.getElementById('nom').value;
+                var prenom = document.getElementById('prenom').value;
+                var email = document.getElementsByName('field3')[0].value;
+                var sujet = document.getElementsByName('field4')[0].value;
+                var message = document.getElementById('field5').value;
+
+                // Afficher un message de confirmation
+                var reponseElement = document.getElementById('reponse');
+                reponseElement.innerHTML = "Votre message a été envoyé, vous recevrez une réponse dans maximum 24h !";
+
+                // Réinitialiser les valeurs du formulaire
+                document.monformulaire.reset();
+            }
+        </script>
 	</head>
 	<body>
 		<nav>
@@ -44,53 +44,54 @@
 			</div>
 			<ul>
 				<li><a href="index.html">A propos de nous</a></li>
-				<li><a href="CV_issa.html">CV de Issa</a></li>
-				<li><a href="CV_jean.html">CV de Jean</a></li>
+				<li><a href="CV_Issa.html">CV de Issa</a></li>
+				<li><a href="CV_Jean.html">CV de Jean</a></li>
 				<li><a href="contact.html">Contactez-nous</a></li>
 			</ul>
 			
 		</nav>
 
         <header>
-                <h1>Nous contacter !</h1>
+            <h1>Nous contacter !</h1> <!-- Titre de la section d'en-tête -->
         </header>
+
         <section>
             <div class="photo">
-              <a href="index.html">
-                <img src="IssaJean.png" alt="Notre photo de profil">
-              </a>
+                <a href="index.html">
+                    <img src="IssaJean.png" alt="Notre photo de profil" />
+                </a>
             </div>
-            <form name="monformulaire" onsubmit="envoyerFormulaire(event)">
-              <ul class="form-style-1">
-                <li>
-                  <label>Votre Nom <span class="required">*</span></label>
-                  <input type="text" id="nom" name="field1" class="field-divided" placeholder="Nom" required />
-                  <input type="text" id="prenom" name="field2" class="field-divided" placeholder="Prénom" required />
-                </li>
-                <li>
-                  <label>Email <span class="required">*</span></label>
-                  <input type="email" name="field3" class="field-long" required />
-                </li>
-                <li>
-                  <label>Sujet</label>
-                  <select name="field4" class="field-select">
-                    <option value="Advertise">Prestation en IA</option>
-                    <option value="Partnership">Développement de Site Web</option>
-                    <option value="General Question">Proposition</option>
-                  </select>
-                </li>
-                <li>
-                  <label>Votre message <span class="required">*</span></label>
-                  <textarea name="field5" id="field5" class="field-long field-textarea" required></textarea>
-                </li>
-                <li>
-                  <input type="submit" value="Envoyer" />
-                </li>
-              </ul>
+            <form name="monformulaire" onsubmit="envoyerFormulaire(event)"> <!-- Formulaire avec nom et fonction appelant notre fonction JavaScript -->
+                <ul class="form-style-1">
+                    <li>
+                        <label>Votre Nom <span class="required">*</span></label>
+                        <input type="text" id="nom" name="field1" class="field-divided" placeholder="Nom" required />
+                        <input type="text" id="prenom" name="field2" class="field-divided" placeholder="Prénom" required />
+                    </li>
+                    <li>
+                        <label>Email <span class="required">*</span></label>
+                        <input type="email" name="field3" class="field-long" required />
+                    </li>
+                    <li>
+                        <label>Sujet</label>
+                        <select name="field4" class="field-select">
+                            <option value="Advertise">Prestation en IA</option>
+                            <option value="Partnership">Développement de Site Web</option>
+                            <option value="General Question">Proposition</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label>Votre message <span class="required">*</span></label>
+                        <textarea name="field5" id="field5" class="field-long field-textarea" required></textarea>
+                    </li>
+                    <li>
+                        <input type="submit" value="Envoyer" />
+                    </li>
+                </ul>
             </form>
-          </section>
-          <section id="reponse"></section>
-          
+        </section>
+
+        <section id="reponse"></section> <!-- Section pour afficher la réponse du formulaire -->
 
         <footer>
 			<div class="colonne">
@@ -102,14 +103,15 @@
 			<div class="colonne">
 				<h3> Autres pages</h3>
 				<p><a href="index.html">A propos de nous</a></p>
-				<p><a href="CV_issa.html">CV de Issa</a></p>
-				<p><a href="CV_jean.html">CV de Jean</a></p>
+				<p><a href="CV_Issa.html">CV de Issa</a></p>
+				<p><a href="CV_Jean.html">CV de Jean</a></p>
 				<p><a href="contact.html">Contactez-nous</a></p>
 			</div>
 			<div class="colonne">
 				<h3>Nos adresses</h3>
-				<p><a href ="Issa.kane@efrei.net">©IssaKANE</a></p>
-				<p><a href ="Jean.loubissa@efrei.net">©JeanLOUBISSA</a></p>
+				<p><a href="Issa.kane@efrei.net">©Issa KANE</a></p>
+				<p><a href="Jean.loubissa@efrei.net">©Jean LOUBISSA</a></p>
 			</div>
 		</footer>
 	</body>
+</html>
